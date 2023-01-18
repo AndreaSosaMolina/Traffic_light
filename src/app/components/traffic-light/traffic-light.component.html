@@ -1,0 +1,16 @@
+<div class="row d-flex flex-column align-items-center">
+    <div class="col-md-12 cont-light">
+        <div [ngClass]="{red: colorSelected == 'rojo'}" class="circle"></div>
+        <div [ngClass]="{yellow: colorSelected == 'amarillo'}" class="circle"></div>
+        <div [ngClass]="{green: colorSelected == 'verde'}" class="circle"></div>
+    </div>
+
+   
+</div>
+
+<div class="row">
+    <div class="col">
+        <app-controller (colors)="allColors($event)"
+                        (oneColor)="selectColor($event)"></app-controller>
+    </div>
+</div>

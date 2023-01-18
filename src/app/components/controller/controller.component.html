@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-3">
+        <h3>Controlador</h3>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <select 
+                (click)="emitColor()"
+                class="form-select"
+                [(ngModel)]="selectedColor">
+
+          
+            <option *ngFor="let color of colorsArr">
+                {{color}}
+            </option>
+        </select>
+    </div>
+
+    <div class="col-md-3" >
+        <input  type="checkbox" 
+                class="form-check-input"
+                (click)="turnOnOff()"
+                >
+              <span [ngClass]="{bold: state}">{{(state ? ' Encendido' : ' Apagado')}}</span> 
+                           
+    </div>
+    
+</div>

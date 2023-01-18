@@ -1,0 +1,32 @@
+.cont-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: gray;
+    padding: 8px;
+    border-radius: 75px;
+  
+}
+
+.circle {
+    background-color: darkgrey;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.red {
+    background-color: red;
+    box-shadow: 0px 0px 20px 5px red
+}
+.yellow {
+    background-color: yellow;
+    box-shadow: 0px 0px 20px 5px yellow;
+}
+.green {
+    background-color: green;
+    box-shadow: 0px 0px 20px 5px green
+}
